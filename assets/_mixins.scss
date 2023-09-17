@@ -1,0 +1,24 @@
+$screen-lg: 1440px;
+$screen-bg: 1025px;
+$screen-md: 880px;
+$screen-sm: 375px;
+
+@mixin media-down($max) {
+  @media screen and (max-width: #{$max - 1}) {
+    @content;
+  }
+}
+
+@mixin media-up($min) {
+  @media screen and (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin media-between($min, $max) {
+  @media screen and (min-width: $min) and (max-width: #{$max - 1}) {
+    @content;
+  }
+}
+
+$color-list:('blue', 'blue-dark', 'red', 'green', 'yellow');
