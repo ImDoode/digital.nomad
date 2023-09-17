@@ -175,3 +175,7 @@ body {
 .links__item--yt {
   background-image: url("../media/icons/yt.svg");
 }
+.links__item--ps {
+  background-image: url("../media/icons/ps.png");
+  background-size: 82%;
+}
