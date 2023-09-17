@@ -106,7 +106,6 @@ body {
 
 .social {
   border-radius: 10px;
-  box-shadow: 4px 4px 12px 3px #000;
   padding: 20px;
   position: absolute;
   bottom: 100px;
@@ -116,6 +115,7 @@ body {
           backdrop-filter: blur(10px);
   color: #fff;
   font-family: latoregular, Montserrat, sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 879px) {
   .social {
@@ -124,6 +124,9 @@ body {
 }
 .social h1 {
   font-size: 1.5em;
+}
+.social p:last-of-type {
+  margin-bottom: 6px;
 }
 
 .links {
