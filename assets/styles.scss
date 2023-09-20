@@ -27,6 +27,8 @@ body {
 
 .loader {
   position: absolute;
+  z-index: 1;
+  opacity: .5;
   left: 50%;
   top: 50%;
   color: #fff;
@@ -185,4 +187,8 @@ body {
       background-size: 82%;
     }
   }
+}
+
+.hidden {
+  display: none;
 }

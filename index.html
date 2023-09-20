@@ -36,8 +36,8 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/94993675" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <div class="bg">
     <span class="loader"></span>
-    <video autoplay playsinline muted loop class="bg__video" poster="./dist/media/bg.min.jpeg">
-      <source src="./dist/media/bg.mp4" type="video/mp4">
+    <video autoplay playsinline muted loop class="bg__video js-video" poster="./dist/media/bg.min.jpg">
+      <source src="https://psv4.userapi.com/c237331/u480784097/docs/d8/b59dcaca1a4c/bg.mp4?extra=Xk1n5v2GlZ4H88f3KbaZOn1sEBeP9o-BGOE4pSGIPwuAY7FZpR4fUy-PjCOqgfETPl8rumt3qZEV3IYWCtKDW-pn8Y3ZLFZkbpHTXdFVvCiGhVIiyQeY5oQuMYlF7oufUrksCscUolR8Un5TXE2mb11SZpM&dl=1" type="video/mp4">
       Ваш браузер не поддерживает видео.
     </video>
   </div>
@@ -54,8 +54,12 @@
       <a href="https://www.facebook.com/kirillrus/" title="Let's be a friends on Facebook" target="_blank" class="links__item links__item--fb"></a>
       <a href="https://twitter.com/seAsia_nomad" target="_blank" class="links__item links__item--tw"></a>
     </div>
-
   </div>
+  <script>
+    document.querySelector('.js-video').addEventListener("playing", (event) => {
+      document.querySelector('.js-loader').classList.add('hidden');
+    });
+  </script>
 </body>
 
 </html>

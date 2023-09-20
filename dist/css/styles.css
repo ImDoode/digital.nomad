@@ -26,6 +26,8 @@ body {
 
 .loader {
   position: absolute;
+  z-index: 1;
+  opacity: 0.5;
   left: 50%;
   top: 50%;
   color: #fff;
@@ -179,4 +181,8 @@ body {
 .links__item--ps {
   background-image: url("../media/icons/ps.png");
   background-size: 82%;
+}
+
+.hidden {
+  display: none;
 }
